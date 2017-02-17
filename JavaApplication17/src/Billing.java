@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author MildReed Zaarv'
- */
 import java.util.Scanner;
 public class Billing {
     public double computeBill(Integer precio){
@@ -32,8 +23,5 @@ public class Billing {
         System.out.println("Ingrese el valor del cupón");
         double c=in.nextDouble();
         System.out.println("Usted deberá pagar $"+objeto.computeBill(n,a,c));
-        
-        
-                
-    }
+     }
 }
