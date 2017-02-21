@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 public class Billing {
+    
     public double computeBill(Integer precio){
         return precio*0.08;
     }

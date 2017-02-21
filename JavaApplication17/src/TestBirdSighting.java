@@ -14,9 +14,9 @@ public class TestBirdSighting {
         Scanner in=new Scanner(System.in);
         //Constructos sin parámetros
         BirdSighting ave=new BirdSighting();
-        System.out.println(ave.getespecie());
-        System.out.println(ave.getdia());
-        System.out.println(ave.getnumero());
+        System.out.println("Especie vista: "+ave.getespecie());
+        System.out.println("Día visto: "+ave.getdia());
+        System.out.println("Número de aves vistas: "+ave.getnumero());
         
         
         System.out.println("Ingrese la especie del ave");
@@ -27,9 +27,10 @@ public class TestBirdSighting {
         int a=in.nextInt();
         //Constructor con parámetros
         BirdSighting ave1=new BirdSighting(g,n,a);
-        System.out.println(ave1.getespecie());
-        System.out.println(ave1.getdia());
-        System.out.println(ave1.getnumero());
+        System.out.println("Especie vista: "+ave1.getespecie());
+        System.out.println("Día visto: "+ave1.getdia());
+        System.out.println("Número de aves vistas: "+ave1.getnumero());
+        
         
     }
     

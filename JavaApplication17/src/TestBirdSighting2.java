@@ -12,7 +12,9 @@ public class TestBirdSighting2 {
     
     public static void main(String[]args){
         BirdSighting2 pajarillo=new BirdSighting2();
-        System.out.println(pajarillo.getespecie());
+        System.out.println("Especie: "+pajarillo.getespecie());
+        System.out.println("Día visto: "+pajarillo.getdia());
+        System.out.println("Número de aves vistas: "+pajarillo.getnumero());
     }
     
 }

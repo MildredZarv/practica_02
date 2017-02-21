@@ -14,14 +14,16 @@ public class CertificateOfDeposit {
     private String apellido;
     private Integer saldo;
     private GregorianCalendar emision;
-    private GregorianCalendar fechaVencimiento;
+    private GregorianCalendar Vencimiento;
     
     public  CertificateOfDeposit(Integer n, String a, Integer s, GregorianCalendar m){
         certificado=n;
         apellido=a;
         saldo=s;
+        emision=new GregorianCalendar();
         emision=m;
-        fechaVencimiento.set(m.get(GregorianCalendar.YEAR)+1, m.get(GregorianCalendar.MONTH),m.get(GregorianCalendar.DAY_OF_MONTH ));
+        Vencimiento=new GregorianCalendar();
+        Vencimiento.set(m.get(GregorianCalendar.YEAR)+1,m.get(GregorianCalendar.MONTH),m.get(GregorianCalendar.DAY_OF_MONTH));
         
         
     }
@@ -53,11 +55,11 @@ public class CertificateOfDeposit {
         return a;
     }
     public void setVencimiento(GregorianCalendar m){
-        fechaVencimiento=m;
+        Vencimiento=m;
     }
     public String  getVencimiento(){
         String a;
-         a=emision.get(GregorianCalendar.DAY_OF_MONTH)+"/"+emision.get(GregorianCalendar.MONTH)+"/"+emision.get(GregorianCalendar.YEAR);
+         a=Vencimiento.get(GregorianCalendar.DAY_OF_MONTH)+"/"+Vencimiento.get(GregorianCalendar.MONTH)+"/"+Vencimiento.get(GregorianCalendar.YEAR);
         return a;
     }
    
