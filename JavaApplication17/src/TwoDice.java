@@ -10,28 +10,13 @@
  */
 import java.util.Scanner;
 public class TwoDice {
-    private Die dado;
     
-//    public int[] Dados(Integer n){
-//        int [] dados=new int[n];
-//        for (int i = 0; i < n; i++) {
-//           dados[i]=dado.getnumero();
-//        }
-//        return dados;
-//    }
-//    //determine el dado más alto
-//    public Integer comparar(Integer []a){
-//        
-//    }
-//            
-            
-    //aplicación que aleatoriamente "arroje" dos dados y muestre sus valores. 
     public static void main(String[]args){
-        Scanner teclado=new Scanner(System.in);
         Die dado1=new Die();
         Die dado2=new Die();
-        MostrarNumero(dado1);
-        MostrarNumero(dado2);
+        dado1.Mostrar();
+        dado2.Mostrar();
+        
         if(dado1.getnumero()>dado2.getnumero()){
             System.out.println("El mayor es el dado 1: "+dado1.getnumero());
             
@@ -41,10 +26,6 @@ public class TwoDice {
             System.out.println("Los dados son iguales");
         }
  
-    }
-    
-    public static void MostrarNumero(Die e){
-        System.out.println(e.getnumero());
     }
     
 }

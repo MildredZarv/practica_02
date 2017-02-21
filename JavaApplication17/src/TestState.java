@@ -9,8 +9,12 @@
  * @author MildReed Zaarv'
  */
 public class TestState {
-    private  State uno;
-    private State dos;
+    public static void main(String[]args){
+        State uno= new State("Ciudad 1", 2345678, "Capital 1", 478569, "Ciudad 2", 364759 );
+        State dos= new State("Ciudad A", 9523490, "Capital A", 632190, "Ciudad B",98760231 );
+        
+        
+    }
     
     
     

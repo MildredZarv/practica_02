@@ -20,4 +20,8 @@ public class Die {
     public Integer getnumero(){
         return numero;
     }
+    
+    public void Mostrar(){
+        System.out.print(numero+" ");
+    }
 }
